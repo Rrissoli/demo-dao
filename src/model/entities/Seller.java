@@ -10,11 +10,11 @@ public class Seller implements Serializable {
 	private String name;
 	private String email;
 	private Date birthDate;
-	private Integer baseSalary;
+	private Double baseSalary;
 	
 	private Department department;
 
-	public Seller(Integer id, String name, String email, Date birthDate, Integer baseSalary, Department department) {
+	public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -50,10 +50,10 @@ public class Seller implements Serializable {
 	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
 	}
-	public Integer getBaseSalary() {
+	public Double getBaseSalary() {
 		return baseSalary;
 	}
-	public void setBaseSalary(Integer baseSalary) {
+	public void setBaseSalary(Double baseSalary) {
 		this.baseSalary = baseSalary;
 	}
 	public Department getDepartment() {
